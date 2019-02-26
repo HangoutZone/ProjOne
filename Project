@@ -1,0 +1,391 @@
+/*
+ ============================================================================
+ Name        : projOne.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void seats(){
+
+	float rowPrice[15];
+	float priceOne;
+	float priceTwo;
+	float priceThree;
+	float priceFour;
+	float priceFive;
+	float priceSix;
+	float priceSeven;
+	float priceEight;
+	float priceNine;
+	float priceTen;
+	float priceEle;
+	float priceTwe;
+	float priceThir;
+	float priceFou;
+	float priceFif;
+	printf("What are the seat values");
+	fflush(stdout);
+
+	for(int i = 0; i < 15; i++)
+	{
+		scanf("%f", &rowPrice[i]);
+	}
+
+	char rowOne[] = "*#****#**#*##*#";
+	char rowTwo[] = "*#**#*####*#**# ";
+	char rowThree[] = "*#**#*#**#*#**#";
+	char rowFour[] = "*#**######*#**#";
+	char rowFive[] = "*#*##*#**#*#**#";
+	char rowSix[] = "*#**#*#**#*#**#";
+	char rowSeven[] = "*#**#*#**#*#**#";
+	char rowEight[] = "*#**#*#**#*##*#";
+	char rowNine[] = "*#**#*#**#*#**#";
+	char rowTen[] = "*#****#**#*#**#";
+	char rowEle[] = "*####*#**#*##*#";
+	char rowTwe[] = "*#*********#**#";
+	char rowThir[] = "*#**#****#*#**#";
+	char rowFou[] = "*#**#****#*#**#";
+	char rowFif[] = "*#**#*#**#*#**#";
+
+	printf("%s %s" ,"Row 1" , rowOne);
+	printf("\n%s %s" ,"Row 2" , rowTwo);
+	printf("\n%s %s" ,"Row 3" , rowThree);
+	printf("\n%s %s" ,"Row 4" , rowFour);
+	printf("\n%s %s" ,"Row 5", rowFive);
+	printf("\n%s %s" ,"Row 6" , rowSix);
+	printf("\n%s %s" ,"Row 7" , rowSeven);
+	printf("\n%s %s" ,"Row 8" , rowEight);
+	printf("\n%s %s" ,"Row 9" , rowNine);
+	printf("\n%s %s" ,"Row 10" , rowTen);
+	printf("\n%s %s" ,"Row 11" , rowEle);
+	printf("\n%s %s" ,"Row 12" , rowTwe);
+	printf("\n%s %s" ,"Row 13" , rowThir);
+	printf("\n%s %s" ,"Row 14" , rowFou);
+	printf("\n%s %s" ,"Row 15" , rowFif);
+
+	int i;
+	int w;
+	int m;
+	float totalPrice;
+
+	printf("\nhow many tickets? ");
+	fflush(stdout);
+	scanf("%d" , &m);
+
+	fflush(stdout);
+	for(int k = 0; k == m; k++)
+	{
+
+		printf("\nenter row: ");
+		scanf("%d" , &w);
+
+		if( w < 16)
+		{
+			printf("\nenter seat: ");
+			scanf("%d" , &i);
+
+			if(w == 1)
+			{
+				if(rowOne[i] != '*')
+				{
+					rowOne[i] = '*';
+					priceOne = rowPrice[0];
+					printf("%f" , priceOne);
+					totalPrice = totalPrice + priceOne;
+				}
+				if(i >= 30)
+				{
+					printf("\nInvalid seat!");
+				}
+				else
+				{
+					printf("\nseat is not empty! choose a seat that is empty.");
+				}
+			}
+
+			if(w == 2)
+			{
+				if(rowTwo[i] != '*')
+				{
+					rowTwo[i] = '*';
+					priceTwo = rowPrice[1];
+					printf("%f" , priceTwo);
+					totalPrice = totalPrice + priceTwo;
+				}
+				if(i >= 30)
+				{
+					printf("\nInvalid seat!");
+				}
+				else
+				{
+					printf("\nseat is not empty! choose a seat that is empty.");
+				}
+			}
+			if(w == 3)
+			{
+				if(rowThree[i] != '*')
+				{
+					rowThree[i] = '*';
+					priceThree = rowPrice[2];
+					printf("%f" , priceThree);
+					totalPrice = totalPrice + priceThree;
+				}
+				if(i >= 30)
+				{
+					printf("\nInvalid seat!");
+				}
+				else
+				{
+					printf("\nseat is not empty! choose a seat that is empty.");
+				}
+			}
+			if(w == 4)
+			{
+				if(rowFour[i] != '*')
+				{
+					rowFour[i] = '*';
+					priceFour = rowPrice[3];
+					printf("%f" , priceFour);
+					totalPrice = totalPrice + priceFour;
+				}
+				if(i >= 30)
+				{
+					printf("\nInvalid seat!");
+				}
+				else
+				{
+					printf("\nseat is not empty! choose a seat that is empty.");
+				}
+		}
+		if(w == 5)
+		{
+			if(rowFive[i] != '*')
+			{
+				rowFive[i] = '*';
+				priceFive = rowPrice[4];
+				printf("%f" , priceFive);
+				totalPrice = totalPrice + priceFive;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 6)
+		{
+			if(rowSix[i] != '*')
+			{
+				rowSix[i] = '*';
+				priceSix = rowPrice[5];
+				printf("%f" , priceSix);
+				totalPrice = totalPrice + priceSix;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 7)
+		{
+			if(rowSeven[i] != '*')
+			{
+				rowSeven[i] = '*';
+				priceSeven = rowPrice[6];
+				printf("%f" , priceSeven);
+				totalPrice = totalPrice + priceSeven;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 8)
+		{
+			if(rowEight[i] != '*')
+			{
+				rowEight[i] = '*';
+				priceEight = rowPrice[7];
+				printf("%f" , priceEight);
+				totalPrice = totalPrice + priceEight;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 9)
+		{
+			if(rowNine[i] != '*')
+			{
+				rowNine[i] = '*';
+				priceNine = rowPrice[8];
+				printf("%f" , priceNine);
+				totalPrice = totalPrice + priceNine;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 10)
+		{
+			if(rowTen[i] != '*')
+			{
+				rowTen[i] = '*';
+				priceTen = rowPrice[9];
+				printf("%f" , priceTen);
+				totalPrice = totalPrice + priceTen;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 11)
+		{
+			if(rowEle[i] != '*')
+			{
+				rowEle[i] = '*';
+				priceEle = rowPrice[10];
+				printf("%f" , priceEle);
+				totalPrice = totalPrice + priceEle;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 12)
+		{
+			if(rowTwe[i] != '*')
+			{
+				rowTwe[i] = '*';
+				priceTwe = rowPrice[11];
+				printf("%f", priceTwe);
+				totalPrice = totalPrice + priceTwe;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 13)
+		{
+			if(rowThir[i] != '*')
+			{
+				rowThir[i] = '*';
+				priceThir = rowPrice[12];
+				printf("%f" , priceThir);
+				totalPrice = totalPrice + priceThir;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 14)
+		{
+			if(rowFou[i] != '*')
+			{
+				rowFou[i] = '*';
+				priceFou = rowPrice[13];
+				printf("%f" , priceFou);
+				totalPrice = totalPrice + priceFou;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+		if(w == 15)
+		{
+			if(rowFif[i] != '*')
+			{
+				rowFif[i] = '*';
+				priceFif = rowPrice[14];
+				printf("%f" , priceFif);
+				totalPrice = totalPrice + priceFif;
+			}
+			if(i >= 30)
+			{
+				printf("\nInvalid seat!");
+			}
+			else
+			{
+				printf("\nseat is not empty! choose a seat that is empty.");
+			}
+		}
+
+	}
+	else
+	{
+		printf("\nInvalid row");
+	}
+
+	}
+
+	int g;
+
+	printf("\nsee total prices press 6!");
+	fflush(stdout);
+	scanf("%d" , &g);
+
+	if(g == 6)
+	{
+		printf("%f", totalPrice);
+	}
+
+}
+
+int main(void) {
+
+	seats();
+
+	return 0;
+}
